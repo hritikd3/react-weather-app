@@ -1,3 +1,19 @@
+So, Hey! Prepare yourself from storms, winds, snow & rainfall <img src="https://i.pinimg.com/originals/4e/78/58/4e7858e916e149f38c3d80056fcb2430.gif"  height="60px"  width="60px"> ! How ? 
+
+So this is  WeatherReact App which fetches the API and you can easily check weather of any place at your finger tips.
+
+Wanna try it , check it here:-
+https://temp-alerts.vercel.app 
+
+
+<u>Tech Stack & Tools used</u>
+<ul> 
+<li>  ReactJs</li>
+ <li> React Bootstrap </li>
+ <li> OpenWeatherAPi </li>
+ <li> Unsource-Splace API for Dynamic background change. </li>
+ </ul>  
+ 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
