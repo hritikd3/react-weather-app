@@ -2,23 +2,30 @@ import React, { useEffect, useState } from "react";
 
 
 export default function SearchWeather() {
- const [search, setSearch]= useState ("india") 
+ const [search, setSearch]= useState ("Goa") 
  const [data,setData]= useState ([]) 
  const [input,setInput]= useState ("") 
- let componentMounted= true;
+//  let componentMounted= true;
  
  useEffect(()=>{
     const fetchWeather= async ()=>{
+      try {
         const response = await fetch(
           `https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=32e7a9d44328b80875530d35b7c40b6f `
         );
-        if(componentMounted){
-            setData(await response.json());
-        } 
-        return ()=> {
-            componentMounted= false;
-            console.log(data)
-        }
+        setData(await response.json())
+      } catch (error) {
+        console.log(error)
+        
+      }
+        
+        // if(componentMounted){
+        //     setData(await response.json());
+        // } 
+        // return ()=> {
+        //     componentMounted= false;
+        //     // console.log(data)
+        // }
     } 
     fetchWeather();
 
