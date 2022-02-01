@@ -25,16 +25,16 @@ export default function SearchWeather() {
  },[search])
 // emoji
 let emoji=null;
-if(typeof data.main != "undefined"){
-    if (data.weather[0].main == "Clouds") {
+if(typeof data.main !== "undefined"){
+    if (data.weather[0].main === "Clouds") {
       emoji = "fa-cloud";
-    } else if (data.weather[0].main == "Thunderstorm") {
+    } else if (data.weather[0].main === "Thunderstorm") {
       emoji = "fa-bolt";
-    } else if (data.weather[0].main == "Drizzle") {
+    } else if (data.weather[0].main === "Drizzle") {
       emoji = "fa-cloud-rain";
-    } else if (data.weather[0].main == "Rain") {
+    } else if (data.weather[0].main === "Rain") {
       emoji = "fa-cloud-shower-heavy";
-    } else if (data.weather[0].main == "Snow") {
+    } else if (data.weather[0].main === "Snow") {
       emoji = "fa-snow-flake";
     } else{
         emoji = "fa-smog"
